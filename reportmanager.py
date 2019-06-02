@@ -6,11 +6,11 @@ import requests
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name('reportmanager-a6d8efaf502e.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('Xxxxxxxx.json', scope)
 gc = gspread.authorize(credentials)
-wks = gc.open_by_key('1IeIOQtXMMy-Lhv36F2KRTGqjSJsAKbutuZ6aRrlk_yo').get_worksheet(3)
+wks = gc.open_by_key('SheetID').get_worksheet(3)
 
-url = 'https://medium.com/feed/@koukitakesue'
+url = 'https://medium.com/feed/@Xxxxxxxxx'
 headers = {
         "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0",
         }
